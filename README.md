@@ -84,8 +84,10 @@ Use GCC to compile the generated C code into an executable.
 
 ```bash
 gcc -std=c99 -Wall -o myprogram C_file.c
+```
 
 ### 3. Run the Program
 
 ```bash
 ./myprogram 
+
