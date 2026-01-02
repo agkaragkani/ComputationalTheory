@@ -73,7 +73,19 @@ Run the following commands in your terminal:
 
 ## 🚀 Usage
 
-### 1. Transpile Code
-Run the compiler by piping a Kappa source file into it.
+### 1. Run the Parser
+Run your parser against the source file. The expected behavior is as follows:
+
+* **Success:** Prints `"Your program is syntactically correct!"` and generates `C_file.c`.
+* **Failure:** Prints syntax errors with specific line numbers.
+
+### 2. Compile the Output C Code
+Use GCC to compile the generated C code into an executable.
+
 ```bash
-./mycompiler < correct1.ka
+gcc -std=c99 -Wall -o myprogram C_file.c
+
+### 3. Run the Program
+
+```bash
+./myprogram 
