@@ -90,4 +90,26 @@ gcc -std=c99 -Wall -o myprogram C_file.c
 
 ```bash
 ./myprogram 
+```
 
+## 🧪 Examples
+
+### Fibonacci (`correct1.ka`)
+Calculates the Nth Fibonacci number using recursion.
+
+* **Input:** `correct1.ka`
+* **Logic:** Uses `def fibonacci(n: integer) -> integer`
+* **Output C:** `correct1.c`
+
+### Factorial (`correct2.ka`)
+Reads an integer from the user and calculates its factorial.
+
+* **Input:** `correct2.ka`
+* **Logic:** Uses `def factorial(n: integer) -> integer`
+* **Output C:** `correct2.c`
+
+---
+
+## 📜 License
+
+Project created for the **Theory of Computation** course (Spring 2023).
