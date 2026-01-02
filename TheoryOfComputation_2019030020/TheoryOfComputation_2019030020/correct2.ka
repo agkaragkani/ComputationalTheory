@@ -1,0 +1,19 @@
+-- Calculate factorial of a number
+def factorial(n: integer) -> integer:
+  if (n <= 0):
+    return 1;
+  else:
+    return n * factorial(n - 1);
+  endif;
+enddef;
+
+def main():
+  num = readInteger();
+  result = factorial(num);
+  
+  writeStr("Factorial of ");
+  writeInteger(num);
+  writeStr(" is ");
+  writeInteger(result);
+  writeStr("\n");
+enddef;

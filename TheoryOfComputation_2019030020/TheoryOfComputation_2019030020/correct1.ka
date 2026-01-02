@@ -1,0 +1,20 @@
+-- File: fibonacci.ka
+-- A Kappa code to calculate the nth Fibonacci number
+
+const N = 10: integer;
+
+def fibonacci(n: integer) -> integer:
+    if (n <= 1) :
+        return n;
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    endif;
+enddef;
+
+def main():
+    result: integer;
+    
+    result = fibonacci(N);
+    writeInteger(result);
+enddef;
+
